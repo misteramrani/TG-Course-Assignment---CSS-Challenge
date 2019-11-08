@@ -1,0 +1,166 @@
+body {
+    margin:0;
+}
+
+.site-header {
+    background: url(/Images/67.jpg) no-repeat center center fixed;
+    height: 600px;
+    background-size: cover;
+}
+
+.site-header__nav {
+    position: fixed;
+    display: flex;
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.site-header__nav__navbar {
+    list-style-type: none;
+    display: flex;
+    margin-top: 0;
+    width: 0px;
+    overflow: hidden;
+}
+.fa:hover ~.site-header__nav__navbar{
+    width: 100%;
+   }
+
+   .site-header__nav__navbar:hover {
+    width: 100%;
+   }
+
+
+.site-header__nav__navbar__listitems {
+    margin-left: 3rem;
+}
+
+.site-header__content {
+    padding:5rem;
+    display: block;
+}
+
+.site-header__content__title, .site-header__content__description {
+text-align: center;
+color: yellow;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 4rem;
+}
+
+.site-header__content__description {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+} 
+
+.site-main__container1 {
+       height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    perspective: 90rem;
+}
+.site-main__container1::after {
+    content:"";
+    background: url(/Images/67.jpg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 50%;
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+
+.site-main__container1__cards {
+    width: 300px; 
+    height: 200px;
+    margin: 3rem 5rem;
+  }
+
+  .site-main__container1__cards:hover {
+    transform: rotateX(30deg);
+    transition-duration: 0.5s;
+}
+
+.site-main__container1__cards1 {
+    background-image: url(/Images/img1.jpg);
+    background-size: cover;
+}
+
+.site-main__container1__cards1:hover {
+    animation: animation-card1 10s linear 0s infinite running;
+}
+
+@keyframes animation-card1 {
+    10% {background-image: url(/Images/img3.jpg);}
+    20% {background-image: url(/Images/img7.jpg);} 
+    30% {background-image: url(/Images/img8.jpg);}
+    40% {background-image: url(/Images/img9.jpg);} 
+    50% {background-image: url(/Images/img10.jpg);}
+    60% {background-image: url(/Images/img11.jpg);} 
+    70% {background-image: url(/Images/img13.jpg);}
+    80% {background-image: url(/Images/img12.jpg);} 
+    90% {background-image: url(/Images/img14.jpg);}
+}
+
+  .site-main__container1__cards2 {
+    background-image: url(/Images/img2.jpg);
+    background-size: cover;
+  }
+  .site-main__container1__cards3 {
+    background-image: url(/Images/img3.jpg);
+    background-size: cover;
+  }
+  .site-main__container1__cards4 {
+    background-image: url(/Images/img4.jpg);
+    background-size: cover;
+  }
+  .site-main__container1__cards5 {
+    background-image: url(/Images/img5.jpg);
+    background-size: cover;
+  }
+  .site-main__container1__cards6 {
+    background-image: url(/Images/img6.jpg);
+    background-size: cover;
+  }
+
+.site-main__container2 {
+    background: url(/Images/67.jpg) no-repeat center center fixed;
+    height: 600px;
+    background-size: cover;
+}
+
+.site-main__container2__title {
+margin-top:0;
+padding-top: 10rem;
+text-align: center;
+color: yellow;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 4rem;
+}
+.site-main__container2__image {
+    height: 10px;
+    width: 10px;
+    border: yellow solid 3px;
+    margin: 10rem auto;
+}
+
+.site-main__container2__image:hover {
+    height: 400px;
+    width: 400px;
+    border: yellow solid 50px;
+    margin: 10rem auto;
+    transform: rotate(4500deg);
+    transition: 2.5s;
+
+}
+
+.site-main__container3 {
+    background: url(/Images/67.jpg) no-repeat center center fixed;
+    height: 600px;
+    background-size: cover;
+    transform: scaleY(-1);
+    opacity: 50%;
+}
