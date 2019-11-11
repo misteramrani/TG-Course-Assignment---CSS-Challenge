@@ -161,6 +161,5 @@ font-size: 4rem;
     background: url(/Images/67.jpg) no-repeat center center fixed;
     height: 600px;
     background-size: cover;
-    transform: scaleY(-1);
     opacity: 50%;
 }
